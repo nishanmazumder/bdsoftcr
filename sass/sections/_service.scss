@@ -1,0 +1,64 @@
+.nm-services{
+    @include nmSecSpc(100px, $nmSecPadR, $nmSecPadB, $nmSecPadL);
+    @include nmSecBg("../img/bg4.jpg");
+
+    .nm-sec-space{
+        @include nmSecWid($nmSecWidthsmall);
+        max-width: 1100px $imp;
+    }
+}
+
+.nm-srv-bg-number{
+    font-family: "Peddana", serif;
+    font-size: 150px;
+    color: transparent;
+    position: absolute;
+    top: -53%;
+    left: 28%;
+    z-index: 1 !important;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #282723;
+}
+
+.nm-srv-block{
+    border: 1px solid $nmC3;
+    padding: 20px 10px 10px;
+    height: 200px;
+    background: $nmC1;
+    position: relative;
+    z-index: 2;
+
+    &:hover img{
+        transform: rotateY(180deg);
+    }
+    
+    img{
+        @include nmImg();   
+        width: 60px;
+        transition: all .4s ease-in;
+    }
+    .nm-srv-content{
+        position: relative;
+        bottom: 0;
+        height: 50%;
+    }
+    h2{
+        @include nmF($nmC2, $nmF2, $nmFw1, $nmTc);
+    }
+    p{
+        @include nmP($nmFcp, 14px, $nmFw1, $nmTc);
+        line-height: 16px;
+    }
+    
+}
+
+.nm-srv-rope{
+    @include nmrope(180deg, -7px, -15px, -7px );
+}
+
+.nm-srv-rope-rev{
+    @include nmrope(180deg, 7px, 15px, 7px );
+}
+
+

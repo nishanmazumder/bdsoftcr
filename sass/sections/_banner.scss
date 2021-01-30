@@ -1,0 +1,118 @@
+.nm-banner{
+    padding-left: 0px;
+    padding-right: 0px;
+
+    .nm-sec-space{
+        margin: 0px auto;
+        display: block;
+    }
+
+    .carousel-inner{
+        width:100%;
+        max-height: 550px $imp;
+
+        img{
+            width:100%;
+        }
+    }
+
+    .nm-slider-social{
+        position: absolute;
+        bottom: 100px;
+        right: -60px;
+        transform: rotate(90deg);
+        padding: 0px;
+        z-index: 1;
+
+        li{
+            display: inline-block;
+            margin-left: 5px;
+            list-style: none;
+            transition: all 0.3s ease-Out;
+            
+            &:hover{
+                    transform: scale(1.2);
+                }
+
+            a{
+                color: $nmC3;
+                font-weight: $nmFw1;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.nm-slider{
+    .carousel-caption{
+        bottom: 45%;
+        left: 30%;
+        right: 30%;
+
+        h1{
+            font-size: 46px;
+        }
+        p{
+            @include nmP($nmFcp, 20px, $nmFw1, $nmTc);
+        }
+        .nm-btn {
+            @include nmBtn();
+        }
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        bottom: 15%;
+        left: -50px;
+        right: unset;
+        z-index: 15;
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        margin-left: 0;
+        list-style: none;
+        transform: rotate(90deg);
+
+        li{
+            width: 15px;
+            height: 5px;
+            background-color: $nmC3;
+            transition: all .45s ease-Out;
+            text-indent: 0px;
+
+            span{
+                @include nmF($nmC3, $nmF4, $nmFw2, $nmTl);
+                position: relative;
+                display: block;
+                top: -20px;
+                font-style: italic;
+            }
+        }
+        .active{
+            width: 100px $imp;
+        }
+    }
+
+    .nm-slider-control-left{
+        @include nmControl(60px, $BlockBorder, $BlockBorder,$BlockBorder, none, 90deg, -90deg );
+        div{
+            top: 23px;
+            left: -32px;
+        }
+        span{
+            top: -5px;
+            left: 3px;
+        }
+    }
+    .nm-slider-control-right{
+        @include nmControl(60px, $BlockBorder, none,$BlockBorder, $BlockBorder, -90deg, -90deg );
+        div{
+            top: -25px;
+            left: 32px;
+        }
+        span{
+            top: 5px;
+            left: -5px;
+        }
+    }
+}

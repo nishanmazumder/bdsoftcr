@@ -1,0 +1,48 @@
+.nm-restaurant{
+    @include nmSecSpc($nmSecPadT, $nmSecPadR, 120px, $nmSecPadL);
+    @include nmSecBg("../img/bg5.jpg");
+    padding-right: 150px;
+
+    .nm-sec-space{
+        @include nmSecWid($nmSecWidthsmall);
+    }
+}
+
+.nm-restaurant-details{
+    padding: 0px 0px 40px 0px;
+
+    h1{
+        @include nmF($nmC2, $nmF1, $nmFw2, $nmTl);  
+    }
+    img{
+        @include nmBorder();
+        margin-left: 0px;
+    }
+    p{
+        @include nmP($nmFcp, 18px, $nmFw1, $nmTl);
+        line-height: 22px;
+    }
+}
+
+.nm-restaurant-block{
+    padding: 20px 15px 10px;
+    
+
+    img{
+        @include nmImg();   
+        /*        width: 100px;*/
+        margin-left: 0px;
+        
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    
+    h2{
+        @include nmF($nmC2, $nmF2, $nmFw2, $nmTl);
+    }
+    p{
+        @include nmP($nmFcp, $nmP, $nmFw1, $nmTl);
+        line-height: 20px;
+    }
+}

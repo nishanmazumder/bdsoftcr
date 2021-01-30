@@ -1,0 +1,43 @@
+.nm-chief{
+    @include nmSecSpc(0px, $nmSecPadR, $nmSecPadB, $nmSecPadL);
+    @include nmSecBg("../img/bg7.jpg");
+
+    .nm-sec-space{
+        @include nmSecWid($nmSecWidthsmall);
+    }
+}
+
+.nm-chief-slider{
+    .carousel-control-next, .carousel-control-prev{
+        opacity: 1;
+    }
+    .carousel-control-prev{
+        left: -40px;
+    }
+    .carousel-control-next{
+        right: -40px;
+    }
+    i{
+        @include nmI($nmC2, $nmC3, $nmC3, $tran, $nmC3);
+    }
+}
+
+.nm-chief-block{
+    width: 90%;
+    float: right;
+
+    h1{
+        @include nmF($nmC2, $nmF1, $nmFw2, $nmTc);  
+        margin-bottom: 20px;
+    }
+    p{
+        @include nmP($nmFcp, $nmP, $nmFw1, $nmTc);
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+    .nm-btn {
+        @include nmBtn();
+    }
+}
+
+

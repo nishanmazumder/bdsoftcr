@@ -1,0 +1,241 @@
+/***Fonts***/
+@mixin nmF($color, $size, $weight, $align){
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    text-align: $align;
+}
+
+@mixin nmP($color, $size, $weight, $align){
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    text-align: $align;
+}
+
+/***Icon***/
+@mixin nmI($color, $bg, $hcolor, $hbg, $hborder){
+    background: $bg;
+    padding: 10px 14px;
+    color: $color;
+    border-radius: 50%;
+    font-size: 20px;
+    border: 2px solid $bg;
+    transition: all .2s ease-in;
+
+    &:hover{
+        background: $hbg;
+        color: $hcolor;
+        border: 2px solid $hborder;
+    }
+}
+
+/***Button***/
+@mixin nmBtn(){
+    position: relative;
+    display: inline-flex;
+    overflow: hidden;
+    cursor: pointer;
+    height: 45px;
+    width: 180px;
+    color: $nmC2;
+    background: $nmC3;
+    border: 1px solid $nmC3;;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in;
+
+    span {
+        color: $nmC2;
+        text-decoration: none;
+        position: relative;
+        transition: all .45s ease-Out;
+        display: block;
+    }
+
+    div {
+        transform: rotate(140deg);
+        width: 100%;
+        height: 230%;
+        left: 0px;
+        background: $nmC3;
+        position: absolute;
+        transition: all 0.3s ease-Out;
+        border: 1px solid #F3BC6F;
+    }
+
+    &:hover{
+        background: $nmC3;
+        transform: scale(1.1);
+    }
+
+    &:hover div{
+        background: $nmC1;
+        border: none;
+    }
+
+    &:hover span{
+        color: $nmC3;
+    }
+}
+
+/***Navigation***/
+
+@mixin nmNav(){
+    margin: 0px auto;
+
+    li{
+        transition: .5s;
+        padding: 5px 20px;
+
+        &::before{
+            content: "";
+            background: $nmC3;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            position: relative;
+            display: block;
+            top: 15px;
+            right: 7px;
+        }
+    }
+    li a{
+        @include nmF($nmC2, $nmMenu, $nmFw1, $nmIn);
+        padding-bottom: 10px;
+        &:hover{
+            border-bottom: double $nmC3 3px;
+        }
+    }
+    .nav-link {
+        display: unset !important;
+    }
+}
+
+/***Section***/
+
+@mixin nmSecWid($width){
+    width: $width;
+    max-width: 1366px;
+    margin: 0px auto;
+}
+
+@mixin nmSecSpc($top, $right, $bottom, $left){
+    padding: $top $right $bottom $left;
+}
+
+@mixin nmSecBg($image){
+    background-position: top center;
+    background-size: cover;
+    background-image: url($image);
+    background-repeat: no-repeat;
+}
+
+/***Banner***/
+/***Block Height+Width = $BHW, Block Border Top,Right,Bottom,Left = $BBT,$BBR,$BBB,$BBL Gap border Transform = $GBT & Icone Transform = $IT***/
+@mixin nmControl($BHW,$BBT,$BBR,$BBB,$BBL,$GBT,$IT){
+    border-top: $BBT;
+    border-left: $BBL;
+    border-bottom: $BBB;
+    border-right: $BBR;
+    width: $BHW;
+    height: $BHW;
+    transition: all .2s ease-in;
+
+    &:hover{
+        background: $nmC3;
+    }
+
+    &:hover img{
+        filter: brightness(0) invert(1);
+    }
+    &:hover span{
+        color: $nmC2;
+    }
+
+    div{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        transform: rotate($GBT);
+
+        &:before {
+            content: "";
+            display: block;
+            flex: 2;
+            height: 1px;
+            border-top: 2px solid $nmC3;
+            border-radius: 3px 0 0 0;
+        }
+        &:after {
+            content: "";
+            display: block;
+            flex: 2;
+            height: 1px;
+            border-top: 2px solid $nmC3;
+            border-radius: 3px 0 0 0;
+        }
+
+        img{
+            transform: rotate($IT);
+            position: relative;
+            top: -6px;
+        }
+    }
+
+    span{
+        @include nmP($nmC3, $nmP, $nmFw1, $nmTc);
+        position: relative;
+        display: inline-flex;
+    }
+}
+
+
+/***image***/
+/***Header Underline***/
+@mixin nmBorder(){
+    width: 150px;
+    display: block;
+    margin: 0px auto 30px;
+}
+
+/***Service***/
+@mixin nmImg(){
+    display: block;
+    margin: 0px auto 20px;
+    transition: all 0.3s ease-Out;
+}
+
+/***Rope***/
+@mixin nmrope($rotate, $point2, $point3, $point4 ){
+    position: absolute;
+    display: block;
+    top: -13px;
+    right: -25px;
+    transform: rotate($rotate);
+
+    div{
+        height: 4px;
+        width: 4px;
+        background: $nmC3;
+        border-radius: 5px;
+        position: relative;
+        margin: 3px;
+
+        display: inline-block;
+
+        &:nth-child(2){
+            top: $point2;
+        }
+        &:nth-child(3){
+            top: $point3;
+        }
+        &:nth-child(4){
+            top: $point4;
+        }
+
+    }
+}
+

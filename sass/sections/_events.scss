@@ -1,0 +1,37 @@
+.nm-events{
+    @include nmSecSpc(0px, $nmSecPadR, $nmSecPadB, 40px);
+    @include nmSecBg("../img/bg6.jpg");
+    background-size: contain;
+
+    .nm-sec-space{
+        @include nmSecWid(70%);
+        margin-left: 0px;
+    }
+}
+.nm-eve-block{
+    padding: 0px 20px;
+
+    a{
+        @include nmF($nmC3, $nmF2, $nmFw2, $nmTc);
+        display: block;
+        margin-bottom: 10px;
+    }
+    p{
+        @include nmP($nmFcp, $nmP, $nmFw1, $nmTc);
+        line-height: 20px;
+    }
+}
+
+.nm-eve-img-block{
+    display: block;
+    overflow: hidden;
+
+    img{
+        width: 100%;
+        transition: .7s;
+
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}

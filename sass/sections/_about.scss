@@ -1,0 +1,33 @@
+.nm-about{
+    @include nmSecSpc($nmSecPadT, $nmSecPadR, $nmSecPadB, $nmSecPadL);
+
+    .nm-sec-space{
+        @include nmSecWid($nmSecWidthFull);
+    }
+}
+
+.nm-about-banner{
+    img{
+        width: 100%;
+        position: relative;
+        margin-left: 60px;
+        z-index: 1;
+    }
+}
+
+.nm-about-block{
+    border: 1px solid $nmC3;
+    padding: 80px 80px 80px 80px;
+    width: 90%;
+
+    h1{
+        @include nmF($nmC2, $nmF1, $nmFw2, $nmTc);  
+    }
+    img{
+        @include nmBorder();
+    }
+    p{
+        @include nmP($nmFcp, $nmP, $nmFw1, $nmTc);
+        line-height: 20px;
+    }
+}

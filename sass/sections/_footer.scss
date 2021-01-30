@@ -1,0 +1,63 @@
+.nm-footer{
+    @include nmSecSpc($nmSecPadT, $nmSecPadR, $nmSecPadB, $nmSecPadL);
+    @include nmSecBg("../img/bg8.jpg");
+
+    .nm-sec-space{
+        @include nmSecWid($nmSecWidthFull);
+    }
+
+    i{
+        @include nmI($nmC3, $nmC2, $nmC3, $tran, $nmC3);
+        margin: 10px;
+
+    }
+    .fa-instagram{
+        padding: 10px 12px;
+    }
+
+    .nm-copyright{
+        margin-top: 30px;
+
+        p{
+            @include nmP($nmFcp, 20px, $nmFw1, $nmTc);
+        }
+        a{
+            @include nmP($nmFcp, 20px, $nmFw1, $nmTc);
+        }
+    }
+
+    .nm-nav{
+        margin-top: 30px;
+
+        button{
+            outline: none;
+        }
+
+        i{
+            padding: 12px 14px $imp;
+        }
+    }
+
+    .nm-nav-item{
+        @include nmNav();
+        position: relative;
+        left: 0px;
+        li{
+            a{
+                @include nmF($nmC3, 16px, $nmFw1, $nmIn);
+                padding-bottom: 10px;
+                text-transform: uppercase;
+
+                &:hover{
+                    border-bottom: double $nmC3 3px;
+                }
+            }
+
+            &::before{
+                display: none;
+            }
+        }
+
+    }
+
+}

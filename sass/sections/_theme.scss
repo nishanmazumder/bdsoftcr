@@ -1,0 +1,21 @@
+body{
+    background: $nmC1;
+    font-family: $nmFf;
+    overflow-x: hidden;
+    margin: 0px auto;
+}
+
+/*img{
+    width: 100%;
+}*/
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('myfont.ttf') format('truetype');
+}
+
+#ascrail2000-hr{
+    div{
+        display: $none $imp;
+    }
+}

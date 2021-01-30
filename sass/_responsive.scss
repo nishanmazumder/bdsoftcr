@@ -1,0 +1,397 @@
+@media (max-width: 1030px) {
+    .nm-sec-space {
+        width: 100% $imp;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .carousel-caption{
+        left: 10% $imp;
+        right: 10% $imp;
+    }
+    .nm-about-block{
+        width: 100% $imp;
+        padding: 50px 20px 50px 20px $imp;
+    }
+    .nm-restaurant{
+        padding: 80px 0px 80px 0px;
+    }
+    .nm-chief {
+        padding: 80px 0px 80px 0px $imp;
+    }
+    .nm-events{
+        padding: 0px;
+        background-image: none;
+        background-color: $nmC1;
+    }
+
+}
+@media (max-width: 780px) {
+    body{
+        width: 100% $imp;
+    }
+    p{
+        font-size: 20px $imp;
+        line-height: 26px $imp;
+    }
+    .nm-services, .nm-about, .nm-restaurant, .nm-chief{
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    /***Header***/
+    .header-logo {
+        margin: 3%;
+        width: 12%;
+    }
+    #NmNavigation{
+        .nm-logo{
+            position: absolute;
+            left: 38%;
+            top: 20px;
+        }
+        button{
+            span{
+                i{
+                    position: absolute;
+                    left: 25px;
+                    color: $nmC3;
+                    font-size: 28px;
+                }
+            }
+        }
+
+        .nm-nav-item{
+            left: 0px;
+
+            li{
+                a{
+                    margin-left: 15px $imp;
+                    &:hover{
+                        transform: none; 
+                    }
+                }
+            }
+        }
+    }
+
+    /***Banner***/
+    .nm-banner{
+        .nm-sec-space{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .nm-slider-social {
+            text-align: center;
+            bottom: 0px;
+            left: 0;
+            right: 0;
+            transform: rotate(0deg);
+        }
+    }
+
+    .carousel-caption{
+        left: 20% $imp;
+        right: 20% $imp;
+    }
+
+    .nm-slider{
+        .carousel-indicators {
+            bottom: 10%;
+            left: -15px;
+
+            .active{
+                width: 50px $imp;
+            }
+        }
+    } 
+
+    /***Services***/
+    .nm-services{
+        .nm-srv-block{
+            margin-bottom: 30px; 
+            height: 240px;
+        }
+
+        .nm-srv-bg-number,
+        .nm-srv-rope,
+        .nm-srv-rope-rev{
+            display: none;
+        }
+    }
+
+    /***About***/
+    .nm-about{
+        .nm-about-banner img{
+            margin-left: 0px;
+        }
+
+        .nm-about-block{
+            margin-top: 80px;
+        }
+    }
+
+    /***Restaurant***/
+    .nm-restaurant{
+        padding-right: 0px;
+    }
+
+    /***Events***/
+    .nm-events{
+        padding-bottom: 80px $imp;
+    }
+
+    .nm-eve-block{
+        padding: 0px 20px;
+    }
+
+    /***Chief***/
+    .nm-chief-block{
+        float: none;
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .nm-footer{
+        .nm-nav {
+            i{
+                margin: 0px $imp;
+            }
+            button{
+                position: relative !important;
+                display: block !important;
+                margin: 0px auto !important;
+                left: -5px;
+            }
+            .nm-nav-item {
+                margin: 30px auto;
+
+                li{
+                    margin: 10px;
+                }
+            }
+            .nav-link{
+                margin-left: 25px;
+            }
+        }
+
+    } 
+}
+
+@media (max-width: 430px) {
+
+    .nm-sec-space {
+        padding-left: 15px $imp;
+        padding-right: 15px $imp;
+    }
+
+    .nm-navigation {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    #NmNavigation{
+        
+        .nm-logo{
+            left: 30%;
+        }
+        
+        button{
+            span{
+                i{
+                   
+                    left: 10px;
+                }
+            }
+        }
+        
+        .nm-nav-item{
+            left: -15px;
+        }
+        
+        .nm-sidenav-icon{
+            right: 0px;
+        }
+        .nmSidenav{
+            width: 250px;
+        }
+    }
+    
+    .nm-slider{
+        .carousel-caption {
+            left: 10% !important;
+            right: 10% !important;
+            bottom: 10% $imp;
+
+
+            h1{
+                font-size: 20px !important;
+                margin-bottom: 5px !important;
+            }
+            p{
+                font-size: 14px !important;
+                line-height: 14px !important;
+                margin-bottom: 7px !important;
+            }
+            .nm-btn{
+                height: 30px;
+                width: 120px;
+
+                span{
+                    font-size: 10px;
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        .nm-slider-control-left {
+            position: absolute;
+            left: 5px;
+            width: 25px;
+            height: 30px;
+
+            span {
+                top: -11px;
+                left: 2px;
+                font-size: 8px;
+            }
+
+            div{
+                top: 11px;
+                left: -14px;
+
+                &::before{
+                    flex: 5;
+                    border-radius: 0px;
+                    margin-left: -4px;
+                }
+                &::after{
+                    flex: 5;
+                    border-radius: 0px;
+                    margin-right: -3px;
+                }
+                img{
+                    width: 50%;
+                    top: -4px;
+                    left: 0px
+                }
+            }
+        }
+        .nm-slider-control-right {
+            position: absolute;
+            right: 5px;
+            width: 25px;
+            height: 30px;
+
+            span {
+                top: -6px;
+                left: -3px;
+                font-size: 8px;
+            }
+
+            div{
+                top: -21px;
+                left: 14px;
+
+                &::before{
+                    flex: 5;
+                    border-radius: 0px;
+                    margin-left: -3px;
+                }
+                &::after{
+                    flex: 5;
+                    border-radius: 0px;
+                    margin-right: -4px;
+                }
+                img{
+                    width: 50%;
+                    top: -4px;
+                    left: 0px
+                }
+            }
+        }
+
+        .carousel-indicators {
+            /*        bottom: -10px;
+                    left: 30px;
+                    right: 0;
+                    transform: rotate(0deg);*/
+
+            display: none;
+
+        }
+
+        .nm-slider-social{
+            bottom: -15px;
+        }
+    }
+
+    .nm-events {
+        padding-bottom: 0px !important;
+
+        .nm-eve-block {
+            padding: 30px 0px 50px;
+        }
+    }
+
+    .nm-restaurant-details{
+        h1 {
+            text-align: center;
+        }
+        img {
+            margin-left: auto !important;
+        }
+        p{
+            text-align: center;
+        }
+    }
+
+    .nm-restaurant-block img {
+        margin-left: auto;
+    }
+
+    .nm-restaurant-content{
+        h2{
+            text-align: center;
+            font-size: 24px $imp;
+        }
+        p{
+            text-align: center;
+        }
+    }
+
+    .nm-chief-slider{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .order-1-mb{
+        order: 1 $imp;
+    }
+    .order-2-mb{
+        order: 2 $imp;
+    }
+    .order-3-mb{
+        order: 4 $imp;
+    }
+    .order-4-mb{
+        order: 3 $imp;
+    }
+    .order-5-mb{
+        order: 5 $imp;
+    }
+    .order-6-mb{
+        order: 6 $imp;
+    }
+
+    .nm-footer {
+        padding: 50px 0px 80px 0px $imp;
+    }
+
+} 
+
+
+
+
+
+
+
