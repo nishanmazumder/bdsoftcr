@@ -1,0 +1,28 @@
+{
+  "name": "bdsofcr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "package-lock.json": "^0.1.0",
+    "shufflejs": "^5.2.3",
+    "jquery": "^3.5.1",
+    "smooth-scrollbar": "^8.5.3",
+    "bootstrap": "^4.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nishanmazumder/bdsoftcr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nishanmazumder/bdsoftcr/issues"
+  },
+  "homepage": "https://github.com/nishanmazumder/bdsoftcr#readme"
+}

@@ -648,7 +648,7 @@ body {
   top: 7px;
 }
 
-/***Services***/
+/***About***/
 .nm-about {
   padding: 80px 0px 80px 0px;
 }
@@ -689,222 +689,50 @@ body {
   line-height: 20px;
 }
 
-/***Restaurant***/
-.nm-restaurant {
-  padding: 80px 0px 120px 0px;
-  background-position: top center;
-  background-size: cover;
-  background-image: url("../img/bg5.jpg");
-  background-repeat: no-repeat;
-  padding-right: 150px;
+/***Gallery***/
+.nm-gallery {
+  padding: 80px 0px 80px 0px;
 }
-.nm-restaurant .nm-sec-space {
-  width: 80%;
+.nm-gallery .nm-sec-space {
+  width: 100%;
   max-width: 1366px;
   margin: 0px auto;
 }
 
-.nm-restaurant-details {
-  padding: 0px 0px 40px 0px;
+.nm-about-banner img {
+  width: 100%;
+  position: relative;
+  margin-left: 60px;
+  z-index: 1;
 }
-.nm-restaurant-details h1 {
+
+.nm-about-block {
+  border: 1px solid #D38920;
+  padding: 80px 80px 80px 80px;
+  width: 90%;
+}
+.nm-about-block h1 {
   color: #fff;
   font-size: 28px;
   font-weight: 400;
-  text-align: left;
+  text-align: center;
 }
-.nm-restaurant-details img {
+.nm-about-block img {
   width: 150px;
   display: block;
   margin: 0px auto 30px;
-  margin-left: 0px;
 }
-.nm-restaurant-details p {
-  color: #9fa3a7;
-  font-size: 18px;
-  font-weight: 300;
-  text-align: left;
-  line-height: 22px;
-}
-
-.nm-restaurant-block {
-  padding: 20px 15px 10px;
-}
-.nm-restaurant-block img {
-  display: block;
-  margin: 0px auto 20px;
-  transition: all 0.3s ease-Out;
-  /*        width: 100px;*/
-  margin-left: 0px;
-}
-.nm-restaurant-block img:hover {
-  transform: scale(1.1);
-}
-.nm-restaurant-block h2 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 400;
-  text-align: left;
-}
-.nm-restaurant-block p {
-  color: #9fa3a7;
-  font-size: 16px;
-  font-weight: 300;
-  text-align: left;
-  line-height: 20px;
-}
-
-/***Events***/
-.nm-events {
-  padding: 0px 0px 80px 40px;
-  background-position: top center;
-  background-size: cover;
-  background-image: url("../img/bg6.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.nm-events .nm-sec-space {
-  width: 70%;
-  max-width: 1366px;
-  margin: 0px auto;
-  margin-left: 0px;
-}
-
-.nm-eve-block {
-  padding: 0px 20px;
-}
-.nm-eve-block a {
-  color: #D38920;
-  font-size: 20px;
-  font-weight: 400;
-  text-align: center;
-  display: block;
-  margin-bottom: 10px;
-}
-.nm-eve-block p {
+.nm-about-block p {
   color: #9fa3a7;
   font-size: 16px;
   font-weight: 300;
   text-align: center;
   line-height: 20px;
-}
-
-.nm-eve-img-block {
-  display: block;
-  overflow: hidden;
-}
-.nm-eve-img-block img {
-  width: 100%;
-  transition: 0.7s;
-}
-.nm-eve-img-block img:hover {
-  transform: scale(1.2);
-}
-
-/***Chief***/
-.nm-chief {
-  padding: 0px 0px 80px 0px;
-  background-position: top center;
-  background-size: cover;
-  background-image: url("../img/bg7.jpg");
-  background-repeat: no-repeat;
-}
-.nm-chief .nm-sec-space {
-  width: 80%;
-  max-width: 1366px;
-  margin: 0px auto;
-}
-
-.nm-chief-slider .carousel-control-next, .nm-chief-slider .carousel-control-prev {
-  opacity: 1;
-}
-.nm-chief-slider .carousel-control-prev {
-  left: -40px;
-}
-.nm-chief-slider .carousel-control-next {
-  right: -40px;
-}
-.nm-chief-slider i {
-  background: #D38920;
-  padding: 10px 14px;
-  color: #fff;
-  border-radius: 50%;
-  font-size: 20px;
-  border: 2px solid #D38920;
-  transition: all 0.2s ease-in;
-}
-.nm-chief-slider i:hover {
-  background: transparent;
-  color: #D38920;
-  border: 2px solid #D38920;
-}
-
-.nm-chief-block {
-  width: 90%;
-  float: right;
-}
-.nm-chief-block h1 {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 400;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.nm-chief-block p {
-  color: #9fa3a7;
-  font-size: 16px;
-  font-weight: 300;
-  text-align: center;
-  line-height: 20px;
-  margin-bottom: 30px;
-}
-.nm-chief-block .nm-btn {
-  position: relative;
-  display: inline-flex;
-  overflow: hidden;
-  cursor: pointer;
-  height: 45px;
-  width: 180px;
-  color: #fff;
-  background: #D38920;
-  border: 1px solid #D38920;
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease-in;
-}
-.nm-chief-block .nm-btn span {
-  color: #fff;
-  text-decoration: none;
-  position: relative;
-  transition: all 0.45s ease-Out;
-  display: block;
-}
-.nm-chief-block .nm-btn div {
-  transform: rotate(140deg);
-  width: 100%;
-  height: 230%;
-  left: 0px;
-  background: #D38920;
-  position: absolute;
-  transition: all 0.3s ease-Out;
-  border: 1px solid #F3BC6F;
-}
-.nm-chief-block .nm-btn:hover {
-  background: #D38920;
-  transform: scale(1.1);
-}
-.nm-chief-block .nm-btn:hover div {
-  background: #000;
-  border: none;
-}
-.nm-chief-block .nm-btn:hover span {
-  color: #D38920;
 }
 
 /***Footer***/
 .nm-footer {
-  padding: 80px 0px 80px 0px;
+  padding: 80px 0px 0px 0px;
   background-position: top center;
   background-size: cover;
   background-image: url("../img/bg8.jpg");
@@ -1005,6 +833,91 @@ body {
   display: none;
 }
 
+body .footer {
+  z-index: 1;
+  --footer-background:#D38920;
+  display: grid;
+  position: relative;
+  grid-area: footer;
+  min-height: 15rem;
+}
+body .footer .bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  background: var(--footer-background);
+  filter: url("#blob");
+}
+body .footer .bubbles .bubble {
+  position: absolute;
+  left: var(--position, 50%);
+  background: var(--footer-background);
+  border-radius: 100%;
+  animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+  transform: translate(-50%, 100%);
+}
+body .footer .content {
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 4rem;
+  padding: 2rem;
+  background: var(--footer-background);
+}
+body .footer .content h3 {
+  font-size: 22px;
+  color: #fff;
+}
+body .footer .content a, body .footer .content p {
+  color: #fff;
+  text-decoration: none;
+}
+body .footer .content b {
+  color: #fff;
+}
+body .footer .content p {
+  margin: 0;
+}
+body .footer .content > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .footer .content > div > div {
+  margin: 0.25rem 0;
+}
+body .footer .content > div > div > * {
+  margin-right: 0.5rem;
+}
+body .footer .content > div .image {
+  align-self: center;
+  width: 4rem;
+  height: 4rem;
+  margin: 0.25rem 0;
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes bubble-size {
+  0%, 75% {
+    width: var(--size, 4rem);
+    height: var(--size, 4rem);
+  }
+  100% {
+    width: 0rem;
+    height: 0rem;
+  }
+}
+@keyframes bubble-move {
+  0% {
+    bottom: -4rem;
+  }
+  100% {
+    bottom: var(--distance, 10rem);
+  }
+}
 /***Responsive***/
 @media (max-width: 1030px) {
   .nm-sec-space {

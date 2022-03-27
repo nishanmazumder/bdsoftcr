@@ -1,5 +1,5 @@
 .nm-footer{
-    @include nmSecSpc($nmSecPadT, $nmSecPadR, $nmSecPadB, $nmSecPadL);
+    @include nmSecSpc($nmSecPadT, $nmSecPadR, 0px, $nmSecPadL);
     @include nmSecBg("../img/bg8.jpg");
 
     .nm-sec-space{

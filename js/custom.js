@@ -2,7 +2,7 @@ $(document).ready(function () {
     // Scroll
     //niceScroll();
     // Scroll Animate
-    new WOW().init();
+    //new WOW().init();
     // SideNav
     nmSidenav();
     // Rope
